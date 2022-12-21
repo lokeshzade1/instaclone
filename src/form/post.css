@@ -1,0 +1,18 @@
+#card{
+    width: 30%;
+    height: 200px;
+    border: 2px solid;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+label{
+    margin-right: 200px;
+}
+input{
+    width: 70%;
+}
+.ip{
+    margin-top: 10px;
+    margin: 0 auto;
+}
