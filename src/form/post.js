@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import './post.css'
 import {  Link } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
 function Post(){
     const[data,setdata]=useState({ image:"",auther:"",location:"",description:""})
     // console.log(data)
     // const[val,setval]=useState('')
     // console.log(val)
-    const config ={
-        headers: {
-          "content-type": "multipart/form-data"
-        }
-      }
+    // const config ={
+    //     headers: {
+    //       "content-type": "multipart/form-data"
+    //     }
+    //   }
 
     const handleClick=async()=>{
     
@@ -21,10 +21,10 @@ function Post(){
             location:data.location,
             description:data.description
         }
-        console.log(newPost.image)
+        console.log(newPost)
   
-   const  val=await  axios.post("http://localhost:8080/add/user", newPost, config)
-          console.log(val)
+//    const  val=await  axios.post("http://localhost:8080/add/user", newPost, config)
+//           console.log(val)
           
   }
 
